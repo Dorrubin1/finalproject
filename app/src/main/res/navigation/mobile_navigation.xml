@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="dor.rubin.dorproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_converse"
+            app:destination="@id/nav_converse" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="dor.rubin.dorproject.ui.nike.NikeFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_shoesInfo"
+            app:destination="@id/shoesInfo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="dor.rubin.dorproject.ui.adidas.AdidasFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" >
+        <action
+            android:id="@+id/action_nav_slideshow_to_shoesInfo"
+            app:destination="@id/shoesInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoesInfo"
+        android:name="dor.rubin.dorproject.ui.nike.NikeInformationFragment"
+        android:label="fragment_shoes_info"
+        tools:layout="@layout/fragment_shoes_info" >
+        <argument
+            android:name="shoesCodeArguments"
+            app:argType="string" />
+        <argument
+            android:name="nikeNameArgument"
+            app:argType="string" />
+        <argument
+            android:name="nikePriceArgument"
+            app:argType="float" />
+        <argument
+            android:name="nikeDescriptionArgument"
+            app:argType="string" />
+        <argument
+            android:name="nikeImageArgument"
+            app:argType="integer" />
+        <argument
+            android:name="nikeSizeBArgument"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_converse"
+        android:name="dor.rubin.dorproject.ui.converse.ConverseFragment"
+        android:label="fragment_converse"
+        tools:layout="@layout/fragment_converse" >
+        <action
+            android:id="@+id/action_nav_converse_to_shoesInfo"
+            app:destination="@id/shoesInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_shopping_cart"
+        android:name="dor.rubin.dorproject.ui.shoppingcart.ShoppingCartFragment"
+        android:label="ShoppingCartFragment" >
+        <action
+            android:id="@+id/action_nav_shopping_cart_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+</navigation>
