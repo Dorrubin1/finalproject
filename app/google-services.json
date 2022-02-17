@@ -1,20 +1,21 @@
 {
   "project_info": {
-    "project_number": "524623545501",
-    "project_id": "dorproject-30aee",
-    "storage_bucket": "dorproject-30aee.appspot.com"
+    "project_number": "1091568036856",
+    "firebase_url": "https://dorproject1-be53c-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "dorproject1-be53c",
+    "storage_bucket": "dorproject1-be53c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:524623545501:android:2c3ee17495cec5c2124074",
+        "mobilesdk_app_id": "1:1091568036856:android:3264c5e1f01180b0df840d",
         "android_client_info": {
           "package_name": "dor.rubin.dorproject"
         }
       },
       "oauth_client": [
         {
-          "client_id": "524623545501-pmr2seivs3dfgadjoaa4k293ju3b6ibt.apps.googleusercontent.com",
+          "client_id": "1091568036856-4llkmfekooes355f7fe6pn9g1iagad4k.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "dor.rubin.dorproject",
@@ -22,20 +23,20 @@
           }
         },
         {
-          "client_id": "524623545501-st9ve3p45524siervk11f2vgcincv25t.apps.googleusercontent.com",
+          "client_id": "1091568036856-ebnui2p6khljtumo8k3aov594ij2jr88.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCVD8T9L2WiAxvfyq6FYbX7KASRqSvlasE"
+          "current_key": "AIzaSyAfPj4ps9LULMjwdOoXEHJLEkoMxW_x7aE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "524623545501-st9ve3p45524siervk11f2vgcincv25t.apps.googleusercontent.com",
+              "client_id": "1091568036856-ebnui2p6khljtumo8k3aov594ij2jr88.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
